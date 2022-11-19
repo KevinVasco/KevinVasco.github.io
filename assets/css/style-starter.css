@@ -12,8 +12,9 @@ Author URL: http://w3layouts.com
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1 --bs-pink: #d63384;
-    --bs-red: #dc3545;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #ff0000 ;
     --bs-orange: #fd7e14;
     --bs-yellow: #ffc107;
     --bs-green: #198754;
@@ -6563,10 +6564,8 @@ fieldset:disabled .btn {
     touch-action: pan-y
 }
 
-.carousel-inner {
-    position: relative;
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
-    overflow: hidden
 }
 
 .carousel-inner::after {
@@ -7435,7 +7434,8 @@ fieldset:disabled .btn {
 }
 
 .w-100 {
-    width: 100% !important
+    width: 100% !important;
+    height: 100vh;
 }
 
 .w-auto {
@@ -18834,12 +18834,12 @@ a.dropdown-item.active {
 }
 
 .w3l-main-slider .banner-top3 {
-    background: url(../images/banner3.jpg) no-repeat center;
+    background: url(../images/catwalk-g1bc3a4d8d_1920.jpg) no-repeat center;
     background-size: cover;
 }
 
 .w3l-main-slider .banner-top4 {
-    background: url(../images/banner4.jpg) no-repeat center;
+    background: url(../images/christmas-g19fff0b8a_1920.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -19295,7 +19295,7 @@ ul.gallery_agile li {
 /*--//gallery--*/
 /*--/video--*/
 .w3l-index5 {
-    background: url(../images/banner3.jpg) no-repeat center;
+    background: url(../images/catwalk-g1bc3a4d8d_1920.jpg) no-repeat center;
     -ms-background-size: cover;
     background-size: cover;
     z-index: 0;
@@ -19427,7 +19427,7 @@ p.vhny-para {
 /*--//video--*/
 /*--/inner-banner--*/
 .inner-banner {
-    background: url(../images/banner4.jpg) no-repeat center;
+    background: url(../images/christmas-g19fff0b8a_1920.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -19852,7 +19852,7 @@ a.call-style i {
 /*--//services--*/
 /*--//inner-banner--*/
 .w3l-testimonials .cusrtomer-layout {
-    background: url(../images/banner4.jpg) no-repeat center;
+    background: url(../images/christmas-g19fff0b8a_1920.jpg) no-repeat center;
     -ms-background-size: cover;
     background-size: cover;
     z-index: 0;
