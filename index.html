@@ -16,65 +16,45 @@ Author URL: http://w3layouts.com
     <!--/Template-CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <!--//Template-CSS -->
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .top-container {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header {
+            padding: 10px 16px;
+            background: #555;
+            color: #f1f1f1;
+        }
+        
+        .content {
+            padding: 16px;
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        .sticky + .content {
+            padding-top: 102px;
+        }
+        </style>
 </head>
 
 <body>
 
-    <!-- top header -->
-    <section class="w3l-top-header py-3">
-        <div class="container">
-            <div class="d-grid main-top">
-                <div class="top-header-left">
-                    <ul class="info-top-gridshny">
-                        <li class="info-grid">
-                            <div class="info-icon"><span class="far fa-clock"></span></div>
-                            <div class="info-text">
-                                <p>Atención al Cliente</p>
-                                <p>Lunes - Sábado 08:00 - 20:00</p>
-                                <p>Domingo y Festivos 09:00 - 19:00</p>
-                            </div>
-
-                        </li>
-                        <li class="info-grid">
-                            <div class="info-icon"><span class="fas fa-phone-alt"></span></div>
-                            <div class="info-text">
-                                <p>Llámanos</p>
-                                <p><a href="tel:+1(21) 234 4567">+1(21) 234 557 4567</a></p>
-                                <p><a href="tel:+1(21) 234 4568">+1(21) 234 557 45678</a></p>
-                            </div>
-
-                        </li>
-                        <li class="info-grid">
-                            <div class="info-icon"><span class="fas fa-map-marker-alt"></span></div>
-                            <div class="info-text">
-                                <p>Dirección</p>
-                                <p>Cq. 1 #70-01</p>
-                                <p>Colombia, Antioquia, Medellín</p>
-
-                            </div>
-
-                        </li>
-                    </ul>
-                </div>
-                <div class="top-header-right text-lg-right">
-                    <ul>
-                        <li>
-                            <a href="#facebook"><span class="fab fa-facebook-f"></span></a>
-                        </li>
-                        <li>
-                            <a href="#twitter"><span class="fab fa-twitter"></span></a>
-                        </li>
-                        <li><a href="#instagram" class="instagram mr-0"><span class="fab fa-instagram"></span></a></li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //top header -->
-
     <!--/Header-->
-    <header id="site-header" class="">
+    <header id="site-header" class="sticky header content">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
                 <h1><a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
@@ -90,7 +70,7 @@ Author URL: http://w3layouts.com
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">Mujeres</a>
+                            <a class="nav-link" href="mujeres.html">Mujeres</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Hombres</a>
@@ -401,33 +381,6 @@ Author URL: http://w3layouts.com
             </div>
         </div>
     </section>
-    <!-- //home-page-video-popup-->
-    <!--/w3-grids-->
-    <section class="w3l-stats-section" id="stats">
-        <div class="container">
-            <div class="w3l-stats-inner-inf p-5">
-                <div class="row stats-con p-md-4 p-3">
-                    <div class="col-lg-3 col-6 stats_info counter_grid">
-                        <p class="counter">+40 Años </p>
-                        <h3>Formando Profesionales</h3>
-                    </div>
-                    <div class="col-lg-3 col-6 stats_info counter_grid">
-                        <p class="counter">12 </p>
-                        <h3>Sedes Educativas</h3>
-                    </div>
-                    <div class="col-lg-3 col-6 stats_info counter_grid">
-                        <p class="counter">+7000</p>
-                        <h3>Estudiantes</h3>
-                    </div>
-                    <div class="col-lg-3 col-6 stats_info counter_grid">
-                        <p class="counter">+100</p>
-                        <h3>Premiaciones y Certificaciones</h3>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!--//Gallery-Section-->
     <!--/w3-grids-->
@@ -509,6 +462,12 @@ Author URL: http://w3layouts.com
                             <p class="footer-phny pe-lg-3">Este es un sitio web creado para el curso de Programacion
                                 de Sistemas Empresariales de la UPB para el semestre 2022 - 20.
                             </p>
+                            <br>
+                            <div class="columns text-left">
+                                <p>
+                                    © 2022 MAHANIE. Todos los derechos reservados | Diseñado por <a href="kevin.vasco@upb.edu.co" target="_blank">Kevin Alejandro Vasco Hurtado</a>
+                                </p>
+                            </div>
                             <div class="columns-2 mt-lg-5 mt-4">
                                 <ul class="social">
                                     <li><a href="#facebook"><span class="fab fa-facebook-f"></span></a>
@@ -671,6 +630,21 @@ Author URL: http://w3layouts.com
     <!-- //disable body scroll which navbar is in active -->
     <!-- //bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+        }
+        </script>
 
 </body>
 
