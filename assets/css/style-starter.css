@@ -48,6 +48,13 @@ Author URL: http://w3layouts.com
     }
 }
 
+
+#btn_whatsapp{
+    position:fixed;
+    bottom:80px;
+    right:32px;
+}
+
 body {
     margin: 0;
     font-family: 'Sarabun', sans-serif;
@@ -20578,6 +20585,8 @@ section.footer-inner-main {
         font-size: 25px;
     }
 }
+
+
 
 /*--//Footer-9--*/
 /*# sourceMappingURL=style-freedom.css.map */
