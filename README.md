@@ -6,6 +6,9 @@ Kevin Alejandro Vasco Hurtado
 
 ## Enlace a la plantilla utilizada
 
+https://wp.w3layouts.com/construe/
+https://w3layouts.com/template/construe-an-industrial-wordpress-theme/ (Estaba gratis)
+
 ## Referentes Usados
 
 https://www.gucci.com/au/en_au/st/decor-lifestyle
